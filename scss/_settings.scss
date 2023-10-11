@@ -1,0 +1,56 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $c-black;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1660px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 120px;
+}
+
+.btn-action {
+  text-transform: uppercase;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 7px 24px;
+  background-color: $action;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+  &:hover {
+    background-color: $accent;
+    color: $action;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 60px;
+  color: $accent;
+}

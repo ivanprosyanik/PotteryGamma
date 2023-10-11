@@ -1,0 +1,27 @@
+.header {
+  padding-top: 30px;
+  margin-bottom: 95px;
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: end;
+  }
+
+  &__link {
+    font-weight: 600;
+    transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
+
+    &:hover {
+      color: $action;
+      text-shadow: 0px 2px 10px $accent;
+    }
+  }
+}

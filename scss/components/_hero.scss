@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url('../images/hero-deco.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    transform: translateY(5px);
+    z-index: -1;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__offer {
+    max-width: 529px;
+    padding-top: 75px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 70px;
+    padding-bottom: 103px;
+    position: relative;
+    margin-bottom: 20px;
+    color: $c-black;
+
+    &::after {
+      content: '';
+      background-image: url('../images/hero-offer.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translateX(-55px);
+      width: 100%;
+      min-height: 96px;
+    }
+  }
+
+  &__descr {
+    max-width: 340px;
+    margin-bottom: 20px;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  &__img {
+    border-radius: 20px;
+
+    &--third,
+    &--fourth {
+      grid-row: 2 span;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--last {
+      grid-column: 2 span;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &--five {
+      margin-top: -120px;
+    }
+  }
+
+}
